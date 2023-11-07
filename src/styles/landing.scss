@@ -1,6 +1,11 @@
 .header {
 	background: #020425;
 	color: #fff;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
 	.container {
 		display: flex;
 		align-items: center;
@@ -34,7 +39,7 @@
 }
 
 .welcome {
-	padding: 70px 0 85px 0;
+	padding: 150px 0 85px 0;
 	color: #fff;
 	background: radial-gradient(
 		50% 50% at 50% 50%,
@@ -753,7 +758,7 @@
 		}
 	}
 	.welcome {
-		padding-top: 45px;
+		padding-top: 125px;
 		padding-bottom: 35px;
 		&__preview {
 			flex-direction: column;
@@ -867,7 +872,6 @@
 
 @media (max-width: 935px) {
 	.header {
-		position: relative;
 		&__navigation,
 		&__buttons {
 			display: none;
@@ -993,7 +997,7 @@
 		padding: 0 20px !important;
 	}
 	.welcome {
-		padding-top: 30px;
+		padding-top: 110px;
 		&__preview {
 			&-info {
 				&-title {
@@ -1034,6 +1038,9 @@
 				img {
 					width: unset;
 				}
+                &-extra {
+                    text-align: left;
+                }
 			}
 		}
 	}
