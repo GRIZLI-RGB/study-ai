@@ -1,0 +1,48 @@
+.button {
+	font-weight: 500;
+	border-radius: 100px;
+	transition: opacity 0.2s;
+	line-height: 20px;
+	&:hover {
+		opacity: 0.85;
+	}
+	&--pink#{&}--small {
+		padding: 0 22px;
+	}
+	&--white#{&}--small {
+		padding: 0 39px;
+	}
+	&--pink#{&}--big {
+		padding: 0 43px;
+	}
+	&--white#{&}--big {
+		padding: 0 56px;
+	}
+	&--pink {
+		color: #fff;
+		background: #ae47ff;
+	}
+	&--white {
+		color: #101828;
+		background: #fff;
+	}
+	&--dark {
+		background: #313131;
+		color: #fff;
+	}
+	&--small {
+		height: 40px;
+	}
+	&--big {
+		height: 60px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 768px) {
+	.button {
+		&--white#{&}--big {
+			padding: 0 43px;
+		}
+	}
+}
